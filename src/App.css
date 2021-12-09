@@ -1,0 +1,56 @@
+.App {
+    text-align: center;
+}
+
+.genre-button {
+    cursor: pointer;
+    background-color: #8fc5dc;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin: 1rem 0.3rem;
+}
+
+.results-list {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: lightgray;
+    display: inline;
+    width: 25%;
+    text-align: left;
+}
+
+.book-name {
+    font-size: larger;
+}
+
+.book-rating {
+    font-size: smaller;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+
+@media only screen and (max-width: 420px) {
+    .results-list {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .result-item {
+        width: 80%;
+    }
+}
